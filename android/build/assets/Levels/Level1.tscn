@@ -1,0 +1,82 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Levels/Level.gd" type="Script" id=1]
+[ext_resource path="res://Levels/Objects/Block.tscn" type="PackedScene" id=2]
+[ext_resource path="res://GUI/HUD.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Levels/Objects/Start.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Levels/Objects/Finish.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Player/Ball.tscn" type="PackedScene" id=6]
+
+[node name="Level" type="Node2D"]
+script = ExtResource( 1 )
+Next_scene = "res://Levels/Level2.tscn"
+
+[node name="Solids" type="Node2D" parent="."]
+
+[node name="Block" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 5.57685, 111.544 )
+scale = Vector2( 1.08314, 1 )
+
+[node name="Block10" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 27.361, 111.496 )
+scale = Vector2( 1.08314, 1 )
+
+[node name="Block11" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 48.6856, 111.693 )
+scale = Vector2( 1.08314, 1 )
+
+[node name="Block12" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 70.1724, 111.645 )
+scale = Vector2( 1.08314, 1 )
+
+[node name="Block13" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 27.5715, 131.396 )
+scale = Vector2( 1.08314, 1 )
+
+[node name="Block14" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 49.0583, 131.348 )
+scale = Vector2( 1.08314, 1 )
+
+[node name="Block15" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 70.6803, 131.545 )
+scale = Vector2( 1.08314, 1 )
+
+[node name="Block16" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 92.1671, 131.497 )
+scale = Vector2( 1.08314, 1 )
+
+[node name="Block2" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 160, 66.2542 )
+
+[node name="Block3" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 160.074, 86.0839 )
+
+[node name="Block4" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 160.187, 105.959 )
+
+[node name="Block5" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 160.262, 125.789 )
+
+[node name="Block6" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 160.324, 145.424 )
+
+[node name="Block7" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 160.398, 165.254 )
+
+[node name="Block8" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 160.511, 185.129 )
+
+[node name="Block9" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 160.585, 204.959 )
+
+[node name="HUD" parent="." instance=ExtResource( 3 )]
+Time = 3.0
+
+[node name="Start" parent="." instance=ExtResource( 4 )]
+position = Vector2( 40, 40 )
+
+[node name="Finish" parent="." instance=ExtResource( 5 )]
+position = Vector2( 20.5267, 161.635 )
+
+[node name="Ball" parent="." instance=ExtResource( 6 )]
+position = Vector2( 60, 60 )

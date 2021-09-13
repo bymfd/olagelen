@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/tap.wav-6960e73bf80ff4db2a931036090f4a84.sample"
+
+[deps]
+
+source_file="res://Assets/Sound/tap.wav"
+dest_files=[ "res://.import/tap.wav-6960e73bf80ff4db2a931036090f4a84.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,213 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Levels/Level.gd" type="Script" id=1]
+[ext_resource path="res://Levels/Objects/Block.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Levels/Objects/BlackHole.tscn" type="PackedScene" id=3]
+[ext_resource path="res://GUI/HUD.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Levels/Objects/Start.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Levels/Objects/Finish.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Player/Ball.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Levels/Objects/Spinner.tscn" type="PackedScene" id=8]
+
+[node name="Level" type="Node2D"]
+script = ExtResource( 1 )
+Next_scene = "res://Levels/Level18.tscn"
+
+[node name="Solids" type="Node2D" parent="."]
+
+[node name="Block" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 66.2204, 130.488 )
+
+[node name="Block2" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 85.7221, 131.237 )
+
+[node name="Block3" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 104.429, 130.328 )
+
+[node name="Block4" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 126.882, 131.826 )
+
+[node name="Block5" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 249.57, 133.112 )
+
+[node name="Block6" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 226.222, 113.611 )
+
+[node name="Block7" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 187.994, 132.18 )
+
+[node name="Block8" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 208.199, 132.18 )
+
+[node name="Block9" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 228.106, 132.298 )
+
+[node name="Block10" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 420.281, 187.86 )
+
+[node name="Block11" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 440.118, 210.05 )
+
+[node name="Block12" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 439.347, 189.074 )
+
+[node name="Block13" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 310.172, 132.651 )
+
+[node name="Block14" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 330.423, 132.651 )
+
+[node name="Block15" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 329.832, 151.761 )
+
+[node name="Block29" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 66.9696, 109.512 )
+
+[node name="Block36" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 67.0887, 88.5355 )
+
+[node name="Block30" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 44.6743, 108.95 )
+
+[node name="Block35" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 67.3467, 52.0103 )
+
+[node name="Block31" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 124.247, 150.743 )
+
+[node name="Block32" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 289.18, 132.322 )
+
+[node name="Block34" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 341.375, 94.7195 )
+
+[node name="Block33" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 350.558, 132.34 )
+
+[node name="Block37" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 318.005, 73.8643 )
+
+[node name="Block38" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 339.005, 73.8643 )
+
+[node name="Block39" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 359.21, 74.4533 )
+
+[node name="Block40" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 379.415, 74.4533 )
+
+[node name="Block41" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 399.322, 74.2173 )
+
+[node name="Block42" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 420.322, 74.2173 )
+
+[node name="Block43" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 440.527, 74.8063 )
+
+[node name="Block16" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 67.226, 69.7302 )
+
+[node name="Block17" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 65.4517, 11.2125 )
+
+[node name="Block18" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 85.3577, 10.9775 )
+
+[node name="Block19" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 106.358, 10.9775 )
+
+[node name="Block20" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 146.791, 27.2987 )
+
+[node name="Block21" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 146.769, 11.5665 )
+
+[node name="Block22" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 228.856, 31.9117 )
+
+[node name="Block24" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 228.857, 12.2735 )
+
+[node name="Block25" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 268.241, 133.195 )
+
+[node name="Block26" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 290.019, 151.687 )
+
+[node name="Block27" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 289.969, 27.7697 )
+
+[node name="Block28" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 289.198, 12.6265 )
+
+[node name="BlackHole20" parent="Solids" instance=ExtResource( 3 )]
+position = Vector2( 428.516, 88.4001 )
+
+[node name="BlackHole3" parent="Solids" instance=ExtResource( 3 )]
+position = Vector2( 40, 240 )
+rotation = -1.5708
+
+[node name="BlackHole12" parent="Solids" instance=ExtResource( 3 )]
+position = Vector2( 80, 240 )
+rotation = -1.5708
+
+[node name="BlackHole13" parent="Solids" instance=ExtResource( 3 )]
+position = Vector2( 218.139, 180.817 )
+rotation = -1.5708
+
+[node name="BlackHole14" parent="Solids" instance=ExtResource( 3 )]
+position = Vector2( 139.773, 239.999 )
+rotation = -1.5708
+
+[node name="BlackHole15" parent="Solids" instance=ExtResource( 3 )]
+position = Vector2( 200, 240 )
+rotation = -1.5708
+
+[node name="BlackHole16" parent="Solids" instance=ExtResource( 3 )]
+position = Vector2( 243.367, 227.257 )
+rotation = -1.5708
+
+[node name="BlackHole17" parent="Solids" instance=ExtResource( 3 )]
+position = Vector2( 280, 240 )
+rotation = -1.5708
+
+[node name="BlackHole18" parent="Solids" instance=ExtResource( 3 )]
+position = Vector2( 323.367, 236.633 )
+rotation = -1.5708
+
+[node name="BlackHole21" parent="Solids" instance=ExtResource( 3 )]
+position = Vector2( 177.429, 42.1701 )
+rotation = -1.5708
+
+[node name="BlackHole22" parent="Solids" instance=ExtResource( 3 )]
+position = Vector2( 96.9601, 58.3671 )
+rotation = -1.5708
+
+[node name="BlackHole23" parent="Solids" instance=ExtResource( 3 )]
+position = Vector2( 218.902, 76.4658 )
+rotation = -1.5708
+
+[node name="BlackHole24" parent="Solids" instance=ExtResource( 3 )]
+position = Vector2( 76.4824, 59.4461 )
+rotation = -1.5708
+
+[node name="BlackHole19" parent="Solids" instance=ExtResource( 3 )]
+position = Vector2( 53.9765, 59.2836 )
+rotation = -1.5708
+
+[node name="BlackHole" parent="Solids" instance=ExtResource( 8 )]
+position = Vector2( 106.366, 47.9339 )
+how_blackhole = 1
+
+[node name="HUD" parent="." instance=ExtResource( 4 )]
+Time = 10.0
+
+[node name="Start" parent="." instance=ExtResource( 5 )]
+position = Vector2( 391.353, 14.2058 )
+
+[node name="Finish" parent="." instance=ExtResource( 6 )]
+position = Vector2( 40, 160 )
+
+[node name="Ball" parent="." instance=ExtResource( 7 )]
+position = Vector2( 412.851, 37.8203 )

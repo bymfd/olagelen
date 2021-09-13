@@ -1,0 +1,116 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Levels/Level.gd" type="Script" id=1]
+[ext_resource path="res://Levels/Objects/Start.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Levels/Objects/Finish.tscn" type="PackedScene" id=3]
+[ext_resource path="res://GUI/HUD.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Player/Ball.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Levels/Objects/Block.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Levels/Objects/Spinner.tscn" type="PackedScene" id=9]
+
+[node name="Level" type="Node2D"]
+script = ExtResource( 1 )
+Next_scene = "res://Levels/Level1.tscn"
+
+[node name="BlackHole" parent="." instance=ExtResource( 9 )]
+position = Vector2( 231.145, 89.5405 )
+rotation = 3.51335
+
+[node name="BlackHole2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 64.0838, 164.455 )
+
+[node name="BlackHole3" parent="." instance=ExtResource( 9 )]
+position = Vector2( 58.0901, 25.1133 )
+
+[node name="Solids" type="Node2D" parent="."]
+
+[node name="Start" parent="." instance=ExtResource( 2 )]
+position = Vector2( 20, 100.789 )
+
+[node name="Finish" parent="." instance=ExtResource( 3 )]
+position = Vector2( 391.919, 102.287 )
+
+[node name="HUD" parent="." instance=ExtResource( 4 )]
+layer = 10
+Time = 7.0
+
+[node name="Ball" parent="." instance=ExtResource( 5 )]
+position = Vector2( 40, 120.789 )
+
+[node name="Block" parent="." instance=ExtResource( 7 )]
+position = Vector2( 310.834, 20.6751 )
+
+[node name="Block2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 331.062, 21.4242 )
+
+[node name="Block3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 349.79, 20.6751 )
+
+[node name="Block4" parent="." instance=ExtResource( 7 )]
+position = Vector2( 370.018, 21.4242 )
+
+[node name="Block5" parent="." instance=ExtResource( 7 )]
+position = Vector2( 349.79, 20.6751 )
+
+[node name="Block6" parent="." instance=ExtResource( 7 )]
+position = Vector2( 370.018, 21.4242 )
+
+[node name="Block7" parent="." instance=ExtResource( 7 )]
+position = Vector2( 388.746, 21.4242 )
+
+[node name="Block8" parent="." instance=ExtResource( 7 )]
+position = Vector2( 408.973, 22.1733 )
+
+[node name="Block9" parent="." instance=ExtResource( 7 )]
+position = Vector2( 427.702, 21.4242 )
+
+[node name="Block10" parent="." instance=ExtResource( 7 )]
+position = Vector2( 447.929, 22.1733 )
+
+[node name="Block11" parent="." instance=ExtResource( 7 )]
+position = Vector2( 427.702, 21.4242 )
+
+[node name="Block12" parent="." instance=ExtResource( 7 )]
+position = Vector2( 447.929, 22.1733 )
+
+[node name="Block13" parent="." instance=ExtResource( 7 )]
+position = Vector2( 304.068, 216.644 )
+
+[node name="Block25" parent="." instance=ExtResource( 7 )]
+position = Vector2( 439.85, 210.185 )
+
+[node name="Block26" parent="." instance=ExtResource( 7 )]
+position = Vector2( 442.518, 145.639 )
+
+[node name="Block27" parent="." instance=ExtResource( 7 )]
+position = Vector2( 441.956, 125.695 )
+
+[node name="Block28" parent="." instance=ExtResource( 7 )]
+position = Vector2( 441.769, 103.686 )
+
+[node name="Block29" parent="." instance=ExtResource( 7 )]
+position = Vector2( 441.206, 83.7425 )
+
+[node name="Block14" parent="." instance=ExtResource( 7 )]
+position = Vector2( 325.045, 217.393 )
+
+[node name="Block15" parent="." instance=ExtResource( 7 )]
+position = Vector2( 343.773, 216.644 )
+
+[node name="Block16" parent="." instance=ExtResource( 7 )]
+position = Vector2( 364.001, 217.393 )
+
+[node name="Block17" parent="." instance=ExtResource( 7 )]
+position = Vector2( 343.773, 216.644 )
+
+[node name="Block18" parent="." instance=ExtResource( 7 )]
+position = Vector2( 364.001, 217.393 )
+
+[node name="Block19" parent="." instance=ExtResource( 7 )]
+position = Vector2( 382.729, 217.393 )
+
+[node name="Block20" parent="." instance=ExtResource( 7 )]
+position = Vector2( 402.956, 218.142 )
+
+[node name="Block21" parent="." instance=ExtResource( 7 )]
+position = Vector2( 421.685, 217.393 )

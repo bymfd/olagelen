@@ -1,0 +1,4 @@
+#Sun Sep 12 22:39:54 TRT 2021
+base.0=/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

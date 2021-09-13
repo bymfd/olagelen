@@ -1,0 +1,50 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Levels/Level.gd" type="Script" id=1]
+[ext_resource path="res://Levels/Objects/Block.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Levels/Objects/BlackHole.tscn" type="PackedScene" id=3]
+[ext_resource path="res://GUI/HUD.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Levels/Objects/Start.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Levels/Objects/Finish.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Player/Ball.tscn" type="PackedScene" id=7]
+
+[node name="Level" type="Node2D"]
+position = Vector2( 6.54064, 8.91905 )
+script = ExtResource( 1 )
+Next_scene = "res://Levels/Level11.tscn"
+
+[node name="Solids" type="Node2D" parent="."]
+
+[node name="Block" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 42.4301, 77.46 )
+rotation = -1.57404
+scale = Vector2( 1, 20.531 )
+
+[node name="Block3" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 41.8355, 135.731 )
+rotation = -3.13924
+scale = Vector2( 0.988538, 3.43565 )
+
+[node name="Block2" parent="Solids" instance=ExtResource( 2 )]
+position = Vector2( 40.6463, 119.567 )
+rotation = 1.5708
+scale = Vector2( 1, -19.28 )
+
+[node name="BlackHole" parent="Solids" instance=ExtResource( 3 )]
+position = Vector2( 424.138, 66.6909 )
+
+[node name="BlackHole2" parent="Solids" instance=ExtResource( 3 )]
+position = Vector2( -45.7747, 169.702 )
+scale = Vector2( 2.40873, 2.81841 )
+
+[node name="HUD" parent="." instance=ExtResource( 4 )]
+Time = 5.0
+
+[node name="Start" parent="." instance=ExtResource( 5 )]
+position = Vector2( 40, 78.633 )
+
+[node name="Finish" parent="." instance=ExtResource( 6 )]
+position = Vector2( 38.2679, 209.191 )
+
+[node name="Ball" parent="." instance=ExtResource( 7 )]
+position = Vector2( 60, 100 )

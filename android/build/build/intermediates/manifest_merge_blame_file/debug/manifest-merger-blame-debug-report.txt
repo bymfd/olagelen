@@ -1,0 +1,173 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.fosstr.olagelen"
+4    android:installLocation="auto"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="19"
+10        android:targetSdkVersion="30" />
+11
+12    <supports-screens
+12-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:12:5-16:40
+13        android:largeScreens="true"
+13-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:15:9-36
+14        android:normalScreens="true"
+14-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:14:9-37
+15        android:smallScreens="true"
+15-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:13:9-36
+16        android:xlargeScreens="true" />
+16-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:16:9-37
+17
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/src/debug/AndroidManifest.xml:10:5-79
+18-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/src/debug/AndroidManifest.xml:10:22-76
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/src/debug/AndroidManifest.xml:11:5-67
+19-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/src/debug/AndroidManifest.xml:11:22-64
+20
+21    <instrumentation
+21-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/src/debug/AndroidManifest.xml:12:5-17:55
+22        android:name=".GodotInstrumentation"
+22-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/src/debug/AndroidManifest.xml:14:9-45
+23        android:icon="@mipmap/icon"
+23-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/src/debug/AndroidManifest.xml:15:9-36
+24        android:label="@string/godot_project_name_string"
+24-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/src/debug/AndroidManifest.xml:16:9-58
+25        android:targetPackage="com.fosstr.olagelen" />
+25-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/src/debug/AndroidManifest.xml:17:9-52
+26    <!-- glEsVersion is modified by the exporter, changing this value here has no effect. -->
+27    <uses-feature
+27-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:19:5-21:35
+28        android:glEsVersion="0x00020000"
+28-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:20:9-41
+29        android:required="true" />
+29-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:21:9-32
+30
+31    <uses-permission android:name="android.permission.WAKE_LOCK" />
+31-->[com.google.android.gms:play-services-measurement-sdk-api:17.1.0] /home/mfd/.gradle/caches/transforms-2/files-2.1/7dda88590bf29e50f2326fbd823526f7/jetified-play-services-measurement-sdk-api-17.1.0/AndroidManifest.xml:25:5-68
+31-->[com.google.android.gms:play-services-measurement-sdk-api:17.1.0] /home/mfd/.gradle/caches/transforms-2/files-2.1/7dda88590bf29e50f2326fbd823526f7/jetified-play-services-measurement-sdk-api-17.1.0/AndroidManifest.xml:25:22-65
+32
+33    <application
+33-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:31:5-72:19
+34        android:allowBackup="false"
+34-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:31:68-95
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.0.0] /home/mfd/.gradle/caches/transforms-2/files-2.1/ee4998e5c44f8791e55e396202e7f092/core-1.0.0/AndroidManifest.xml:22:18-86
+36        android:debuggable="true"
+37        android:icon="@mipmap/icon"
+37-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:31:181-208
+38        android:label="@string/godot_project_name_string"
+38-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:31:18-67
+39        android:requestLegacyExternalStorage="false" >
+39-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:31:136-180
+40        <activity
+40-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:49:9-66:20
+41            android:name="com.godot.game.GodotApp"
+41-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:50:13-37
+42            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|density|keyboard|navigation|screenLayout|uiMode"
+42-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:55:13-141
+43            android:label="@string/godot_project_name_string"
+43-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:51:13-62
+44            android:launchMode="singleTask"
+44-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:53:13-44
+45            android:resizeableActivity="false"
+45-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:56:13-47
+46            android:screenOrientation="userLandscape"
+46-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:54:13-50
+47            android:theme="@style/GodotAppSplashTheme" >
+47-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:52:13-55
+48            <intent-filter>
+48-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:62:13-65:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:63:17-69
+49-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:63:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:64:17-77
+51-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:64:27-74
+52            </intent-filter>
+53        </activity>
+54        <!-- Records the version of the Godot editor used for building -->
+55        <meta-data
+56            android:name="org.godotengine.editor.version"
+57            android:value="3.3.3.stable" />
+58        <meta-data
+58-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:46:2-48:69
+59            android:name="com.google.android.gms.ads.APPLICATION_ID"
+59-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:47:13-69
+60            android:value="ca-app-pub-9919961021600092~1323187041" /> <!-- Records the version of the Godot library -->
+60-->/home/mfd/Desktop/Godot_jam_games/Trijam - Bounce or Die/android/build/AndroidManifest.xml:48:13-67
+61        <meta-data
+61-->[godot-lib.debug.aar] /home/mfd/.gradle/caches/transforms-2/files-2.1/07eb4d87e283bf5e3a01bbcaf6469940/jetified-godot-lib.debug/AndroidManifest.xml:20:9-22:44
+62            android:name="org.godotengine.library.version"
+62-->[godot-lib.debug.aar] /home/mfd/.gradle/caches/transforms-2/files-2.1/07eb4d87e283bf5e3a01bbcaf6469940/jetified-godot-lib.debug/AndroidManifest.xml:21:13-59
+63            android:value="3.3.3.stable" />
+63-->[godot-lib.debug.aar] /home/mfd/.gradle/caches/transforms-2/files-2.1/07eb4d87e283bf5e3a01bbcaf6469940/jetified-godot-lib.debug/AndroidManifest.xml:22:13-41
+64
+65        <service android:name="org.godotengine.godot.GodotDownloaderService" />
+65-->[godot-lib.debug.aar] /home/mfd/.gradle/caches/transforms-2/files-2.1/07eb4d87e283bf5e3a01bbcaf6469940/jetified-godot-lib.debug/AndroidManifest.xml:24:9-80
+65-->[godot-lib.debug.aar] /home/mfd/.gradle/caches/transforms-2/files-2.1/07eb4d87e283bf5e3a01bbcaf6469940/jetified-godot-lib.debug/AndroidManifest.xml:24:18-77
+66
+67        <meta-data
+67-->[GodotAdMob.5.0.0.release.aar] /home/mfd/.gradle/caches/transforms-2/files-2.1/923431033262401ffc5a931a4977303c/jetified-GodotAdMob.5.0.0.release/AndroidManifest.xml:14:9-16:82
+68            android:name="org.godotengine.plugin.v1.GodotAdMob"
+68-->[GodotAdMob.5.0.0.release.aar] /home/mfd/.gradle/caches/transforms-2/files-2.1/923431033262401ffc5a931a4977303c/jetified-GodotAdMob.5.0.0.release/AndroidManifest.xml:15:13-64
+69            android:value="shinnil.godot.plugin.android.godotadmob.GodotAdMob" />
+69-->[GodotAdMob.5.0.0.release.aar] /home/mfd/.gradle/caches/transforms-2/files-2.1/923431033262401ffc5a931a4977303c/jetified-GodotAdMob.5.0.0.release/AndroidManifest.xml:16:13-79
+70        <meta-data
+70-->[GodotShare.release.aar] /home/mfd/.gradle/caches/transforms-2/files-2.1/f7bd07510eceb32834bd4a892452e5a9/jetified-GodotShare.release/AndroidManifest.xml:12:9-14:82
+71            android:name="org.godotengine.plugin.v1.GodotShare"
+71-->[GodotShare.release.aar] /home/mfd/.gradle/caches/transforms-2/files-2.1/f7bd07510eceb32834bd4a892452e5a9/jetified-GodotShare.release/AndroidManifest.xml:13:13-64
+72            android:value="shinnil.godot.plugin.android.godotshare.GodotShare" />
+72-->[GodotShare.release.aar] /home/mfd/.gradle/caches/transforms-2/files-2.1/f7bd07510eceb32834bd4a892452e5a9/jetified-GodotShare.release/AndroidManifest.xml:14:13-79
+73
+74        <provider
+74-->[GodotShare.release.aar] /home/mfd/.gradle/caches/transforms-2/files-2.1/f7bd07510eceb32834bd4a892452e5a9/jetified-GodotShare.release/AndroidManifest.xml:16:9-24:20
+75            android:name="androidx.core.content.FileProvider"
+75-->[GodotShare.release.aar] /home/mfd/.gradle/caches/transforms-2/files-2.1/f7bd07510eceb32834bd4a892452e5a9/jetified-GodotShare.release/AndroidManifest.xml:17:13-62
+76            android:authorities="com.fosstr.olagelen"
+76-->[GodotShare.release.aar] /home/mfd/.gradle/caches/transforms-2/files-2.1/f7bd07510eceb32834bd4a892452e5a9/jetified-GodotShare.release/AndroidManifest.xml:18:13-51
+77            android:exported="false"
+77-->[GodotShare.release.aar] /home/mfd/.gradle/caches/transforms-2/files-2.1/f7bd07510eceb32834bd4a892452e5a9/jetified-GodotShare.release/AndroidManifest.xml:19:13-37
+78            android:grantUriPermissions="true" >
+78-->[GodotShare.release.aar] /home/mfd/.gradle/caches/transforms-2/files-2.1/f7bd07510eceb32834bd4a892452e5a9/jetified-GodotShare.release/AndroidManifest.xml:20:13-47
+79            <meta-data
+79-->[GodotShare.release.aar] /home/mfd/.gradle/caches/transforms-2/files-2.1/f7bd07510eceb32834bd4a892452e5a9/jetified-GodotShare.release/AndroidManifest.xml:21:13-23:63
+80                android:name="android.support.FILE_PROVIDER_PATHS"
+80-->[GodotShare.release.aar] /home/mfd/.gradle/caches/transforms-2/files-2.1/f7bd07510eceb32834bd4a892452e5a9/jetified-GodotShare.release/AndroidManifest.xml:22:17-67
+81                android:resource="@xml/file_provider_paths" />
+81-->[GodotShare.release.aar] /home/mfd/.gradle/caches/transforms-2/files-2.1/f7bd07510eceb32834bd4a892452e5a9/jetified-GodotShare.release/AndroidManifest.xml:23:17-60
+82        </provider> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+83        <activity
+83-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/mfd/.gradle/caches/transforms-2/files-2.1/17789e5b0149eeb89358a8b01376b503/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:29:9-33:64
+84            android:name="com.google.android.gms.ads.AdActivity"
+84-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/mfd/.gradle/caches/transforms-2/files-2.1/17789e5b0149eeb89358a8b01376b503/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:30:13-65
+85            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+85-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/mfd/.gradle/caches/transforms-2/files-2.1/17789e5b0149eeb89358a8b01376b503/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:31:13-122
+86            android:exported="false"
+86-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/mfd/.gradle/caches/transforms-2/files-2.1/17789e5b0149eeb89358a8b01376b503/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:32:13-37
+87            android:theme="@android:style/Theme.Translucent" />
+87-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/mfd/.gradle/caches/transforms-2/files-2.1/17789e5b0149eeb89358a8b01376b503/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:33:13-61
+88
+89        <provider
+89-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/mfd/.gradle/caches/transforms-2/files-2.1/17789e5b0149eeb89358a8b01376b503/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:35:9-39:39
+90            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+90-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/mfd/.gradle/caches/transforms-2/files-2.1/17789e5b0149eeb89358a8b01376b503/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:36:13-76
+91            android:authorities="com.fosstr.olagelen.mobileadsinitprovider"
+91-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/mfd/.gradle/caches/transforms-2/files-2.1/17789e5b0149eeb89358a8b01376b503/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:37:13-73
+92            android:exported="false"
+92-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/mfd/.gradle/caches/transforms-2/files-2.1/17789e5b0149eeb89358a8b01376b503/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:38:13-37
+93            android:initOrder="100" />
+93-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/mfd/.gradle/caches/transforms-2/files-2.1/17789e5b0149eeb89358a8b01376b503/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:39:13-36
+94
+95        <meta-data
+95-->[com.google.android.gms:play-services-basement:17.0.0] /home/mfd/.gradle/caches/transforms-2/files-2.1/0e28db26779229e0d9baff317473479e/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+96            android:name="com.google.android.gms.version"
+96-->[com.google.android.gms:play-services-basement:17.0.0] /home/mfd/.gradle/caches/transforms-2/files-2.1/0e28db26779229e0d9baff317473479e/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+97            android:value="@integer/google_play_services_version" />
+97-->[com.google.android.gms:play-services-basement:17.0.0] /home/mfd/.gradle/caches/transforms-2/files-2.1/0e28db26779229e0d9baff317473479e/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+98    </application>
+99
+100</manifest>

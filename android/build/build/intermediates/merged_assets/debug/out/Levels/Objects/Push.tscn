@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/Images/another-world-tileset.png" type="Texture" id=1]
+
+[sub_resource type="PhysicsMaterial" id=1]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 20, 20 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 1 )
+region = Rect2( 272, 96, 34, 32 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ SubResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Push" type="RigidBody2D"]
+physics_material_override = SubResource( 1 )
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 20, 20 )
+shape = SubResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 41.0
+margin_bottom = 41.0
+rect_clip_content = true
+mouse_filter = 2
+color = Color( 0.623529, 0.286275, 0.137255, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 21.1248, 20.0152 )
+scale = Vector2( 1.24256, 1.25201 )
+frames = SubResource( 4 )
