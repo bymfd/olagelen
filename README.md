@@ -2,7 +2,7 @@
 
 # DOWNLOAD
 
-<a href="https://github.com/bymfd/olagelen/releases/" class="button">APK</a>
+<a href="https://github.com/bymfd/olagelen/releases/" class="btn">APK</a>
 
 
 ### Support or Contact
