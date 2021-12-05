@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Player/Ball.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Images/Ball.png" type="Texture" id=2]
@@ -6,7 +6,6 @@
 [ext_resource path="res://Animation/Pop.tres" type="Animation" id=4]
 [ext_resource path="res://Assets/Sound/die.ogg" type="AudioStream" id=5]
 [ext_resource path="res://Assets/Sound/tap.wav" type="AudioStream" id=6]
-[ext_resource path="res://admob-lib/admob.gd" type="Script" id=7]
 
 [sub_resource type="PhysicsMaterial" id=1]
 bounce = 0.4
@@ -43,14 +42,5 @@ volume_db = -5.977
 stream = ExtResource( 6 )
 volume_db = -5.977
 
-[node name="AdMob" type="Node" parent="."]
-script = ExtResource( 7 )
-is_real = true
-interstitial_id = "ca-app-pub-9919961021600092/7807530880"
-rewarded_id = "ca-app-pub-9919961021600092/2309051378"
-
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
-[connection signal="interstitial_closed" from="AdMob" to="." method="_on_AdMob_interstitial_closed"]
-[connection signal="interstitial_failed_to_load" from="AdMob" to="." method="_on_AdMob_interstitial_failed_to_load"]
-[connection signal="interstitial_loaded" from="AdMob" to="." method="_on_AdMob_interstitial_loaded"]

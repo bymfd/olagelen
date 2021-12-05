@@ -12,13 +12,13 @@
 atlas = ExtResource( 6 )
 region = Rect2( 0, 0, 364, 379 )
 
-[sub_resource type="AtlasTexture" id=3]
+[sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 7 )
 region = Rect2( 5, 10, 5, 5 )
 
-[sub_resource type="SpriteFrames" id=2]
+[sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ SubResource( 1 ), SubResource( 3 ) ],
+"frames": [ SubResource( 1 ), SubResource( 2 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -26,7 +26,7 @@ animations = [ {
 
 [node name="Level" type="Node2D"]
 script = ExtResource( 1 )
-Next_scene = "res://Levels/Level1.tscn"
+Next_scene = "res://Levels/Level0.tscn"
 
 [node name="Solids" type="Node2D" parent="."]
 
@@ -56,7 +56,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Button"]
 position = Vector2( 11.6672, 13.0815 )
 scale = Vector2( 0.1, 0.1 )
-frames = SubResource( 2 )
+frames = SubResource( 3 )
 frame = 1
 speed_scale = 0.7
 playing = true

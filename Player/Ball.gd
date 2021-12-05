@@ -11,9 +11,6 @@ var dying:bool = false
 
 func _ready()->void:
 	$AnimationPlayer.play("Default")
-	if !$AdMob._is_interstitial_loaded:
-		$AdMob.load_interstitial()
-		print("load çalıştı")
 	#set_process(false)	#Disable _process
 
 func _unhandled_input(event)->void:
@@ -51,27 +48,12 @@ func death()->void:
 	linear_velocity = Vector2.ZERO
 	set_applied_force(Vector2.ZERO)
 	Event.emit_signal("StopTime")
-	$AnimationPlayer.play("Pop")
-	
+
 	if Event.is_sound:
 		$AudioStreamPlayer.play()
 		
 
 func _on_AnimationPlayer_animation_finished(anim_name):
-	$AdMob.show_interstitial()
-	print("gösterdi mi")
+
 	if dying && !Event.is_finishing:
 		get_tree().reload_current_scene()
-
-
-
-
-
-func _on_AdMob_interstitial_closed():
-	print("kapandı")
-	$AdMob.load_interstitial()
-
-
-func _on_AdMob_interstitial_loaded():
-	print("Yüklendi")
-	#$AdMob.show_interstitial()
