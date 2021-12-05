@@ -2,4 +2,4 @@
 Olagelen a godot game
 
 
-- [🔭 screenshots and downloads](bymfd.github.io/olagelen)
+- [🔭 screenshots and downloads](https://bymfd.github.io/olagelen)
